@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Quiz Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js" defer></script>
+
+    <!-- You don't need to change noChange.js file. It's fine -->
+    <script src="./noChange.js" defer></script>
+    <!-- You don't need to change noChange.js file. It's fine -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white font-common">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+      <nav class="flex justify-between items-center w-9/12 mx-auto">
+        <div class="text-zinc-800 font-bold uppercase">
+          <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+          <p class="text-[10px] font-normal capitalize -mt-1">
+            Get ready to Quiz and be amazed!
+          </p>
+        </div>
+        <a
+          href="/index.html"
+          class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+        >
+          Quiz
+        </a>
+      </nav>
+    </header>
+
+    <!-- Top bar of question page start -->
+    <section
+      class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto text-center"
+      id="alertContainer"
+    >
+      <div class="grid grid-cols-1 gap-4">
+        <div class="text-left border-b pb-2">
+          <h2>
+            <span class="font-bold">1</span>
+            <span>What is JavaScript?</span>
+          </h2>
+          <p class="text-sm">
+            JavaScript is a high-level, interpreted programming language that
+            conforms to the ECMAScript specification. It is used primarily to
+            create and control dynamic website content.
+          </p>
+        </div>
+
+        <div class="text-left border-b pb-2">
+          <h2>
+            <span class="font-bold">2</span>
+            <span>What are JavaScript data types?</span>
+          </h2>
+          <p class="text-sm">
+            JavaScript data types include Number, String, Boolean, Object,
+            Undefined, Null, Symbol, and BigInt.
+          </p>
+        </div>
+
+        <div class="text-left border-b pb-2">
+          <h2>
+            <span class="font-bold">3</span>
+            <span
+              >What is the difference between "==" and "===" in
+              JavaScript?</span
+            >
+          </h2>
+          <p class="text-sm">
+            "==" checks for equality with type coercion, while "===" checks for
+            equality without type coercion, meaning both value and type must be
+            the same.
+          </p>
+        </div>
+
+        <div class="text-left border-b pb-2">
+          <h2>
+            <span class="font-bold">4</span>
+            <span>What is a closure in JavaScript?</span>
+          </h2>
+          <p class="text-sm">
+            A closure is a feature where an inner function has access to the
+            outer (enclosing) function's variables, even after the outer
+            function has closed.
+          </p>
+        </div>
+
+        <div class="text-left border-b pb-2">
+          <h2>
+            <span class="font-bold">5</span>
+            <span>Explain "this" keyword in JavaScript.</span>
+          </h2>
+          <p class="text-sm">
+            The "this" keyword refers to the object it belongs to. In a method,
+            it refers to the owner object. Alone, it refers to the global object
+            (window in browsers). In an event, it refers to the element that
+            received the event.
+          </p>
+        </div>
+
+        <div class="text-left border-b pb-2">
+          <h2>
+            <span class="font-bold">6</span>
+            <span>What is the difference between "null" and "undefined"?</span>
+          </h2>
+          <p class="text-sm">
+            "undefined" means a variable has been declared but not assigned a
+            value. "null" is an assignment value that represents no value or no
+            object.
+          </p>
+        </div>
+
+        <div class="text-left border-b pb-2">
+          <h2>
+            <span class="font-bold">7</span>
+            <span
+              >What is an Immediately Invoked Function Expression (IIFE)?</span
+            >
+          </h2>
+          <p class="text-sm">
+            An IIFE is a function that runs as soon as it is defined. It is
+            defined with the function expression wrapped inside parentheses,
+            followed by another set of parentheses to call it.
+          </p>
+        </div>
+
+        <div class="text-left border-b pb-2">
+          <h2>
+            <span class="font-bold">8</span>
+            <span>What is event delegation?</span>
+          </h2>
+          <p class="text-sm">
+            Event delegation is a technique involving the use of a single event
+            listener to manage all events of a particular type for child
+            elements. This is done by exploiting the event bubbling mechanism.
+          </p>
+        </div>
+
+        <div class="text-left border-b pb-2">
+          <h2>
+            <span class="font-bold">9</span>
+            <span>What are Promises in JavaScript?</span>
+          </h2>
+          <p class="text-sm">
+            Promises are objects that represent the eventual completion (or
+            failure) of an asynchronous operation and its resulting value. They
+            provide a cleaner way to handle asynchronous operations compared to
+            callbacks.
+          </p>
+        </div>
+
+        <div class="text-left border-b pb-2">
+          <h2>
+            <span class="font-bold">10</span>
+            <span>What is the use of the "let" keyword in JavaScript?</span>
+          </h2>
+          <p class="text-sm">
+            The "let" keyword is used to declare variables that are
+            block-scoped, meaning the variables are only accessible within the
+            block where they are defined.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+      Copyright © 2023 Quiz Hero All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
+  </body>
+</html>
